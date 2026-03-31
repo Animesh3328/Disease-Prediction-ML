@@ -1,0 +1,126 @@
+# DISEASE PREDICTION USING MACHINE LEARNING
+
+## AUTHOR DETAILS
+
+Name        : Animesh Arjariya
+Reg No      : 25BAI11301
+Branch      : CSE (AI & ML)
+University  : VIT Bhopal University
+
+## PROJECT OVERVIEW
+
+This project is based on predicting diseases using machine learning algorithms.
+Different models are trained and evaluated, and an ensemble technique is used
+to improve prediction performance.
+
+The system takes symptoms as input and predicts the most likely disease.
+
+## OBJECTIVES
+
+1. To build machine learning models for disease prediction
+2. To compare performance of different algorithms
+3. To implement ensemble learning (majority voting)
+4. To analyze results using evaluation metrics
+
+## DATASET
+
+The dataset contains symptom-based features.
+
+Features include:
+
+* Fever
+* Cough
+* Fatigue
+* Headache
+* Body Pain
+* Other symptoms
+
+Target:
+
+* Disease label
+
+## MACHINE LEARNING MODELS USED
+
+1. Decision Tree
+2. Random Forest
+3. Support Vector Machine (SVM)
+4. Naive Bayes
+
+## MODEL PERFORMANCE
+
+Cross Validation Accuracy:
+Decision Tree    : 65.39%
+Random Forest    : 65.42%
+SVM              : 64.68%
+
+Final Accuracy:
+Random Forest    : 67.25%
+SVM              : 66.70%
+Naive Bayes      : 37.61%
+Combined Model   : 66.70%
+
+## ENSEMBLE METHOD
+
+Majority voting is used to combine predictions:
+
+final_preds = [mode([i, j, k]) for i, j, k in zip(svm_preds, nb_preds, rf_preds)]
+
+Advantages:
+
+* Improves stability
+* Reduces overfitting
+
+## EVALUATION
+
+* Accuracy Score
+* Confusion Matrix
+
+Confusion Matrix helps in:
+
+* Identifying correct predictions
+* Identifying misclassifications
+
+## TECHNOLOGIES USED
+
+* Python
+* Scikit-learn
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+
+## HOW TO RUN
+
+1. Clone the repository:
+   git clone https://github.com/your-username/disease-prediction-ml.git
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Run the project:
+   jupyter notebook
+
+## RESULTS AND INSIGHTS
+
+* Random Forest performed best
+* Naive Bayes showed poor performance
+* Ensemble model improved stability but not accuracy
+
+## LIMITATIONS
+
+* Small dataset
+* Limited feature engineering
+* No deep learning models used
+
+## FUTURE WORK
+
+* Hyperparameter tuning
+* Use advanced models (XGBoost, Neural Networks)
+* Deploy as a web application
+
+## CONCLUSION
+
+This project demonstrates how machine learning can be used for disease prediction.
+Random Forest achieved the best performance, while ensemble learning improved reliability.
+
+## THANK YOU
